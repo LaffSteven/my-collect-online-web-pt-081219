@@ -3,8 +3,7 @@ def my_collect(languages)
     "Block not given."
   else
     i = 0
-    while i < languages.length
-      puts languages[i] 
+    while i < languages.length do
       yield(languages[i])
       i += 1
     end
