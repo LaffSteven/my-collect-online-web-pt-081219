@@ -1,11 +1,11 @@
-def my_collect(array)
+def my_collect(languages)
   if !block_given?
     "Block not given."
   else
     i = 0
-    while i < array.length
-      puts array[i] 
-      yield(array[i])
+    while i < languages.length
+      puts languages[i] 
+      yield(languages[i])
       i += 1
     end
   end
